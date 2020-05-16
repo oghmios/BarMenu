@@ -12,7 +12,7 @@
     <header> </header>
     <main id="app">
         <div class="flex overflow-hidden">
-            <div class="md:hidden">
+            <div>
                 <div :class="{'block': isOpen, 'hidden': !isOpen}" class="fixed inset-0 flex z-40">
                     <div class="fixed inset-0" @click="isOpen = false">
                         <div class="absolute inset-0 bg-gray-600 opacity-75"></div>
