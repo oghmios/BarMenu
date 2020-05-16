@@ -1,0 +1,25 @@
+{
+  "name": "BarMenu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oghmios/BarMenu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oghmios/BarMenu/issues"
+  },
+  "homepage": "https://github.com/oghmios/BarMenu#readme",
+  "description": ""
+}
