@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build entry.js --out-dir ./"
+    "build": "parcel build src/index.html --out-dir ./"
   },
   "repository": {
     "type": "git",
