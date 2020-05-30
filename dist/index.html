@@ -22,7 +22,7 @@
 
         <div class="flex overflow-hidden">
             <!-- Off-canvas menu for mobile -->
-            <div class="md:hidden">
+            <div>
                 <div :class="{'block': isOpen, 'hidden': !isOpen}" class="fixed inset-0 flex z-40">
 
                     <div class="fixed inset-0" @click="isOpen = false">
@@ -53,12 +53,13 @@
             </div>
 
             <div class="flex flex-col w-0 flex-1 overflow-hidden">
-                <div class=" pl-1 pt-1 sm:pl-3 sm:pt-3">
-                    <button @click="isOpen = !isOpen" class="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150" aria-label="Open sidebar">
+                <div class="flex flex-row pl-1 pt-1 sm:pl-3 sm:pt-3 items-center ">
+                    <button @click="isOpen = !isOpen" class="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-700 hover:text-gray-900 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150" aria-label="Open sidebar">
                         <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
+                    <div class="text-2xl font-bold text-gray-700">Café Gadea</div>
                 </div>
 
                 <main class="flex-1 relative z-0 overflow-y-auto pt-2 pb-6 focus:outline-none md:py-6" tabindex="0">
@@ -75,10 +76,10 @@
                                                 Producto
                                             </th>
                                             <th class="px-2 py-4 border-b border-red-400 bg-red-400 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
-                                                Mesa
+                                                Barra
                                             </th>
                                             <th class="px-2 py-4 border-b border-red-400 bg-red-400 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
-                                                Barra
+                                                Mesa
                                             </th>
                                             <th class="px-2 py-4 border-b border-red-400 bg-red-400 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
                                                 Terraza
@@ -87,18 +88,18 @@
                                     </thead>
                                     <tbody>
                                         <tr v-for="product of currentMenu.list" class="bg-white">
-                                            <td class="px-2 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900 font-bold text-sm">
+                                            <td class="px-2 py-2 whitespace-pre-line text-sm leading-5 font-medium text-gray-900 font-bold text-sm align-middle">
                                                 {{product.name}}
                                                 <span v-if="product.description" class="block text-sm italic pl-6 pt-3 text-xs font-normal whitespace-pre-line">{{product.description}}</span>
                                             </td>
 
-                                            <td class="px-2 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
-                                                {{product.mesa}}
-                                            </td>
-                                            <td class="px-2 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
+                                            <td class="px-2 py-2 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
                                                 {{product.barra}}
                                             </td>
-                                            <td class="px-2 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
+                                            <td class="px-2 py-2 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
+                                                {{product.mesa}}
+                                            </td>
+                                            <td class="px-2 py-2 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
                                                 {{product.terraza}}
                                             </td>
                                         </tr>
