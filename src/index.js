@@ -97,12 +97,6 @@ new Vue({
                         terraza: '1,75 €'
                     },
                     {
-                        name: 'Varios',
-                        mesa: '0,00 €',
-                        barra: '0,00 €',
-                        terraza: '0,00 €'
-                    },
-                    {
                         name: 'Zumito 1/2 Tostada',
                         mesa: '3,10 €',
                         barra: '2,75 €',
