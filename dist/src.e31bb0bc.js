@@ -127,6 +127,7 @@ new Vue({
       //Desayunos
       name: 'Desayunos',
       id: 1,
+      available: true,
       list: [{
         name: 'Desayuno 1/2 Tostada',
         mesa: '2,25 €',
@@ -188,27 +189,7 @@ new Vue({
         barra: '4,50 €',
         terraza: '4,75 €'
       }, {
-        name: '1/2 Tostada',
-        mesa: '1,35 €',
-        barra: '1,25 €',
-        terraza: '1,50 €'
-      }, {
-        name: 'Tostada Completa',
-        mesa: '2,00 €',
-        barra: '1,75 €',
-        terraza: '2,00 €'
-      }, {
-        name: 'Pieza Bollería',
-        mesa: '1,60 €',
-        barra: '1,50 €',
-        terraza: '1,75 €'
-      }, {
-        name: 'Varios',
-        mesa: '0,00 €',
-        barra: '0,00 €',
-        terraza: '0,00 €'
-      }, {
-        name: 'Zumito 1/2 Tostada',
+        name: 'Bote zumo 1/2 Tostada',
         mesa: '3,10 €',
         barra: '2,75 €',
         terraza: '3,25 €'
@@ -241,135 +222,136 @@ new Vue({
     }, {
       name: 'Sandwiches y Bocadillos',
       id: 2,
+      available: true,
       list: [{
         name: 'Sandwich Mixto',
-        description: 'Jamón york y queso tostado',
+        description: 'Jamón york y queso',
         mesa: '3,35 €',
         barra: '3,25 €',
         terraza: '3,50 €'
       }, {
         name: 'Sandwich Gadea',
-        description: 'Jamón york y queso tostado',
+        description: 'Salmón, queso manchego, tomate y lechuga',
         mesa: '3,70 €',
         barra: '3,60 €',
         terraza: '3,85 €'
       }, {
         name: 'Sandwich Especial',
-        description: 'Jamón york y queso tostado',
+        description: 'Jamón york, lechuga, tomate, espárragos y mayonesa',
         mesa: '3,60 €',
         barra: '3,50 €',
         terraza: '3,75 €'
       }, {
         name: 'Sandwich Costa',
-        description: 'Jamón york y queso tostado',
+        description: 'Atún, mayonesa y lechuga',
         mesa: '3,60 €',
         barra: '3,50 €',
         terraza: '3,75 €'
       }, {
         name: 'Sandwich Ibérico',
-        description: 'Jamón york y queso tostado',
+        description: 'Lomo, queso manchego, tomate y espárragos',
         mesa: '3,75 €',
         barra: '3,60 €',
         terraza: '3,85 €'
       }, {
         name: 'Sandwich Cool',
-        description: 'Jamón york y queso tostado',
+        description: 'Chorizo, jamón york y queso fresco',
         mesa: '3,60 €',
         barra: '3,50 €',
         terraza: '3,75 €'
       }, {
         name: 'Croissant Mixto',
-        description: 'Jamón york y queso tostado',
+        description: 'Croissant a la plancha con jamón york y queso',
         mesa: '3,45 €',
         barra: '3,35 €',
         terraza: '3,60 €'
       }, {
         name: 'Bocadillo Jamón',
-        description: 'Jamón york y queso tostado',
         mesa: '3,60 €',
         barra: '3,50 €',
         terraza: '3,75 €'
       }, {
         name: 'Bocadillo Queso',
-        description: 'Jamón york y queso tostado',
         mesa: '3,60 €',
         barra: '3,50 €',
         terraza: '3,75 €'
       }, {
         name: 'Bocadillo Tortilla',
-        description: 'Jamón york y queso tostado',
         mesa: '3,40 €',
         barra: '3,30 €',
         terraza: '3,55 €'
       }, {
         name: 'Bocadillo Lomo Adobado',
-        description: 'Jamón york y queso tostado',
         mesa: '3,85 €',
         barra: '3,75 €',
         terraza: '4,00 €'
       }, {
         name: 'Bocadillo Longaniza',
-        description: 'Jamón york y queso tostado',
         mesa: '3,45 €',
         barra: '3,05 €',
         terraza: '3,60 €'
       }, {
         name: 'Bocadillo Salmón',
-        description: 'Jamón york y queso tostado',
         mesa: '3,60 €',
         barra: '3,50 €',
         terraza: '3,75 €'
       }, {
         name: 'Bocadillo Jamón York Y Queso',
-        description: 'Jamón york y queso tostado',
         mesa: '3,80 €',
         barra: '3,70 €',
         terraza: '3,95 €'
       }, {
         name: 'Bocadillo Anchoas',
-        description: 'Jamón york y queso tostado',
         mesa: '3,50 €',
         barra: '3,40 €',
         terraza: '3,60 €'
       }, {
         name: 'Bocadillo Atún',
-        description: 'Jamón york y queso tostado',
         mesa: '3,50 €',
         barra: '3,40 €',
         terraza: '3,60 €'
       }, {
         name: 'Bocadillo Queso Fresco',
-        description: 'Jamón york y queso tostado',
         mesa: '3,40 €',
         barra: '3,30 €',
         terraza: '3,50 €'
       }, {
         name: 'Bocadillo Sobrasada',
-        description: 'Jamón york y queso tostado',
         mesa: '3,55 €',
         barra: '3,45 €',
         terraza: '3,65 €'
       }, {
         name: '1/2 Bocadillo',
-        description: 'Jamón york y queso tostado',
         mesa: '2,10 €',
         barra: '2,00 €',
         terraza: '2,25 €'
       }, {
         name: '1/2 Bocadillo Lomo Adobado',
-        description: 'Jamón york y queso tostado',
         mesa: '2,35 €',
         barra: '2,25 €',
         terraza: '2,50 €'
       }, {
         name: 'Montadito',
-        description: 'Jamón york y queso tostado',
         mesa: '1,60 €',
         barra: '1,50 €',
         terraza: '1,70 €'
       }, {
+        name: '1/2 Tostada',
+        mesa: '1,35 €',
+        barra: '1,25 €',
+        terraza: '1,50 €'
+      }, {
+        name: 'Tostada Completa',
+        mesa: '2,00 €',
+        barra: '1,75 €',
+        terraza: '2,00 €'
+      }, {
+        name: 'Pieza Bollería',
+        mesa: '1,60 €',
+        barra: '1,50 €',
+        terraza: '1,75 €'
+      }, {
         name: 'Ingrediente Extra',
-        description: 'Jamón york y queso tostado',
         mesa: '0,50 €',
         barra: '0,50 €',
         terraza: '0,50 €'
@@ -377,6 +359,7 @@ new Vue({
     }, {
       name: 'Tapas',
       id: 3,
+      available: true,
       list: [{
         name: 'Pincho Tortilla',
         mesa: '2,25 €',
@@ -436,6 +419,7 @@ new Vue({
     }, {
       name: 'Bebidas Calientes',
       id: 4,
+      available: true,
       list: [{
         name: 'Café Con Leche',
         mesa: '1,60 €',
@@ -520,6 +504,7 @@ new Vue({
     }, {
       name: 'Bebidas Frias',
       id: 5,
+      available: true,
       list: [{
         name: 'Coca Cola',
         mesa: '2,30 €',
@@ -604,6 +589,7 @@ new Vue({
     }, {
       name: 'Cervezas y Licores',
       id: 6,
+      available: true,
       list: [{
         name: 'Caña Cerveza',
         mesa: '1,70 €',
@@ -715,16 +701,6 @@ new Vue({
         barra: '2,05 €',
         terraza: '2,60 €'
       }, {
-        name: 'Tapón Licores Sabores',
-        mesa: '1,80 €',
-        barra: '1,75 €',
-        terraza: '1,90 €'
-      }, {
-        name: 'Tapón Whisky',
-        mesa: '2,25 €',
-        barra: '2,25 €',
-        terraza: '2,50 €'
-      }, {
         name: 'Moscatel',
         mesa: '1,90 €',
         barra: '1,80 €',
@@ -743,95 +719,97 @@ new Vue({
     }, {
       name: 'Copas',
       id: 7,
+      available: true,
       list: [{
         name: 'Terry White',
-        mesa: '4,10 €',
-        barra: '4,00 €',
-        terraza: '4,25 €'
+        mesa: '5,35 €',
+        barra: '5,25 €',
+        terraza: '5,50 €'
       }, {
         name: 'Bacardi',
-        mesa: '4,75 €',
-        barra: '4,50 €',
-        terraza: '5,00 €'
+        mesa: '6,00 €',
+        barra: '5,75 €',
+        terraza: '6,25 €'
       }, {
         name: 'Negrita',
-        mesa: '4,50 €',
-        barra: '4,25 €',
-        terraza: '4,75 €'
+        mesa: '5,75 €',
+        barra: '5,50 €',
+        terraza: '6,00 €'
       }, {
         name: 'Cacique',
-        mesa: '4,90 €',
-        barra: '4,60 €',
-        terraza: '5,10 €'
-      }, {
-        name: 'Brugal',
-        mesa: '5,25 €',
-        barra: '5,00 €',
-        terraza: '5,50 €'
-      }, {
-        name: 'White Label',
-        mesa: '4,75 €',
-        barra: '4,50 €',
-        terraza: '5,00 €'
-      }, {
-        name: 'Dyc',
-        mesa: '4,25 €',
-        barra: '4,00 €',
-        terraza: '4,50 €'
-      }, {
-        name: 'J&B',
-        mesa: '4,75 €',
-        barra: '4,50 €',
-        terraza: '5,00 €'
-      }, {
-        name: 'Ballant.',
-        mesa: '4,80 €',
-        barra: '4,60 €',
-        terraza: '5,10 €'
-      }, {
-        name: 'Cardhu',
         mesa: '6,15 €',
-        barra: '5,90 €',
+        barra: '5,85 €',
         terraza: '6,35 €'
       }, {
+        name: 'Brugal',
+        mesa: '6,50 €',
+        barra: '6,25 €',
+        terraza: '6,75 €'
+      }, {
+        name: 'White Label',
+        mesa: '6,00 €',
+        barra: '5,75 €',
+        terraza: '6,25 €'
+      }, {
+        name: 'Dyc',
+        mesa: '5,50 €',
+        barra: '5,25 €',
+        terraza: '5,75 €'
+      }, {
+        name: 'J&B',
+        mesa: '6,00 €',
+        barra: '5,75 €',
+        terraza: '6,25 €'
+      }, {
+        name: 'Ballant.',
+        mesa: '6,05 €',
+        barra: '5,85 €',
+        terraza: '6,35 €'
+      }, {
+        name: 'Cardhu',
+        mesa: '7,40 €',
+        barra: '7,15 €',
+        terraza: '7,60 €'
+      }, {
         name: 'Larios',
-        mesa: '4,50 €',
-        barra: '3,85 €',
-        terraza: '4,75 €'
+        mesa: '5,75 €',
+        barra: '5,10 €',
+        terraza: '6,00 €'
       }, {
         name: 'Beefeater',
-        mesa: '4,75 €',
-        barra: '4,50 €',
-        terraza: '5,00 €'
+        mesa: '6,00 €',
+        barra: '5,75 €',
+        terraza: '6,25 €'
       }, {
         name: 'Gordons',
-        mesa: '4,50 €',
-        barra: '3,85 €',
-        terraza: '4,75 €'
+        mesa: '5,75 €',
+        barra: '5,10 €',
+        terraza: '6,00 €'
       }, {
         name: 'Seagram\'S',
-        mesa: '5,25 €',
-        barra: '5,00 €',
-        terraza: '5,50 €'
+        mesa: '6,50 €',
+        barra: '6,25 €',
+        terraza: '6,75 €'
       }, {
         name: 'Terry',
-        mesa: '2,05 €',
-        barra: '2,25 €',
-        terraza: '2,50 €'
+        mesa: '3,60 €',
+        barra: '3,50 €',
+        terraza: '3,75 €'
       }, {
         name: 'Smirnoff',
-        mesa: '4,50 €',
-        barra: '3,85 €',
-        terraza: '4,75 €'
+        mesa: '5,75 €',
+        barra: '5,10 €',
+        terraza: '6,00 €'
       }, {
         name: 'Eristoff',
-        mesa: '4,50 €',
-        barra: '4,25 €',
-        terraza: '4,75 €'
+        mesa: '5,75 €',
+        barra: '5,50 €',
+        terraza: '6,00 €'
       }]
     }, {
       name: 'Helados',
       id: 8,
+      available: true,
       list: [{
         name: 'M&M\'S',
         mesa: '2,10 €',
@@ -924,6 +902,17 @@ new Vue({
     currentMenu: function currentMenu() {
       var _this = this;
 
+      var date = new Date();
+      var hour = date.getHours();
+      var minute = date.getMinutes();
+
+      if ((hour >= 12 && minute > 1 || hour < 6) && this.view == "Desayunos") {
+        this.view = 'Sandwiches y Bocadillos';
+        this.menu.find(function (section) {
+          return section.name = 'Desayunos';
+        }).available = false;
+      }
+
       return this.menu.find(function (section) {
         return section.name == _this.view;
       });
@@ -965,7 +954,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55639" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56992" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

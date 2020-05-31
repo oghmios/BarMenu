@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu Cafe Gadea</title>
 
     <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
@@ -39,7 +39,7 @@
                         </div>
                         <div class="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
                             <nav class="mt-5 px-2">
-                                <button @click="changeView(section.name)" v-for="section of menu" class="group flex items-center px-2 py-2 text-base leading-6 font-medium text-white rounded-md bg-gray-100 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150 w-full bg-red-700 my-2">
+                                <button @click="changeView(section.name)" v-if="section.available" v-for="section of menu" class="group flex items-center px-2 py-2 text-base leading-6 font-medium text-white rounded-md bg-gray-100 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150 w-full bg-red-700 my-2">
                                     {{section.name}}
                                 </button>
                             </nav>
@@ -88,18 +88,18 @@
                                     </thead>
                                     <tbody>
                                         <tr v-for="product of currentMenu.list" class="bg-white">
-                                            <td class="px-2 py-2 whitespace-pre-line text-sm leading-5 font-medium text-gray-900 font-bold text-sm align-middle">
+                                            <td class="px-2 py-3 whitespace-pre-line text-sm leading-5 font-medium text-gray-900 font-bold text-sm align-middle">
                                                 {{product.name}}
                                                 <span v-if="product.description" class="block text-sm italic pl-6 pt-3 text-xs font-normal whitespace-pre-line">{{product.description}}</span>
                                             </td>
 
-                                            <td class="px-2 py-2 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
+                                            <td class="px-2 py-3 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
                                                 {{product.barra}}
                                             </td>
-                                            <td class="px-2 py-2 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
+                                            <td class="px-2 py-3 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
                                                 {{product.mesa}}
                                             </td>
-                                            <td class="px-2 py-2 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
+                                            <td class="px-2 py-3 whitespace-no-wrap text-sm leading-5 text-gray-500 text-center">
                                                 {{product.terraza}}
                                             </td>
                                         </tr>
